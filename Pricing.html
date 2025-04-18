@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f5f3d">
+  <title>Pricing | EchoQR Ultra-Luxury Feedback</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  <style>
+    :root {
+      --color-primary: #0f5f3d;
+      --color-secondary: #a8ffcb;
+      --color-accent: #d4af37;
+      --color-bg-light: #f3fcf4;
+    }
+  </style>
+</head>
+<body class="flex flex-col md:flex-row bg-[var(--color-bg-light)] text-gray-900 font-sans">
+
+  <aside class="hidden md:flex md:flex-col w-64 bg-white shadow-lg fixed top-0 bottom-0">
+    <nav class="flex-1 p-6 space-y-4 mt-6">
+      <a href="faq.html" class="block text-gray-700 hover:text-[var(--color-primary)]">FAQ</a>
+      <a href="why us.html" class="block text-gray-700 hover:text-[var(--color-primary)]">Why Us</a>
+      <a href="about.html" class="block text-gray-700 hover:text-[var(--color-primary)]">About Us</a>
+      <a href="terms of service.html" class="block text-gray-700 hover:text-[var(--color-primary)]">Terms of Service</a>
+      <a href="privacy policy.html" class="block text-gray-700 hover:text-[var(--color-primary)]">Privacy Policy</a>
+      <a href="https://tally.so/r/3NO8z0" target="_blank" class="block bg-[var(--color-secondary)] text-[var(--color-primary)] px-4 py-2 rounded-full font-semibold hover:bg-[var(--color-accent)]">Get Started</a>
+    </nav>
+  </aside>
+
+  <div class="flex-1 md:ml-64">
+    <header class="bg-[var(--color-primary)] sticky top-0 z-50 shadow-md">
+      <div class="container mx-auto flex items-center justify-between px-6 py-4">
+        <a href="index.html" class="text-white text-2xl font-bold">EchoQR</a>
+        <nav class="hidden md:flex space-x-8 text-white text-lg">
+          <a href="index.html" class="hover:text-[var(--color-secondary)]">Home</a>
+          <a href="features.html" class="hover:text-[var(--color-secondary)]">Features</a>
+          <a href="pricing.html" class="hover:text-[var(--color-secondary)]">Pricing</a>
+          <a href="contact.html" class="hover:text-[var(--color-secondary)]">Contact</a>
+          <a href="https://tally.so/r/3NO8z0" target="_blank" class="bg-[var(--color-secondary)] text-[var(--color-primary)] px-5 py-2 rounded-full font-semibold hover:bg-[var(--color-accent)] transition">Sign Up Here</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-white text-3xl">☰</button>
+      </div>
+      <div id="mobile-menu" class="hidden bg-[var(--color-primary)] md:hidden">
+        <nav class="flex flex-col px-6 py-4 space-y-4 text-white text-lg">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://tally.so/r/3NO8z0" target="_blank" class="bg-[var(--color-secondary)] text-[var(--color-primary)] px-4 py-2 rounded-full text-center font-semibold">Sign Up Here</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-8 pb-16">
+      <section id="pricing" class="container mx-auto px-6" data-aos="fade-up">
+        <h2 class="text-center text-4xl font-bold text-[var(--color-primary)] mb-6">Simple, Transparent, Designed for Growth</h2>
+        <div class="text-center mb-12">
+          <a href="https://tally.so/r/3NO8z0" target="_blank" class="bg-[var(--color-primary)] text-[var(--color-secondary)] px-6 py-3 rounded-full font-semibold transition-transform hover:scale-105">Sign Up Here</a>
+        </div>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-xl font-semibold text-[var(--color-primary)] mb-2">Starter</h3>
+            <div class="text-3xl font-bold text-[var(--color-accent)] mb-2">$25/mo</div>
+            <p class="text-gray-700 mb-4">Ideal for single-location venues.</p>
+            <ul class="space-y-2 mb-4 flex-1">
+              <li>✔ Branded QR feedback</li>
+              <li>✔ Unlimited responses</li>
+              <li>✔ Instant alerts</li>
+              <li>✔ Email summaries</li>
+            </ul>
+            <p class="text-center text-gray-600">7-day trial + $100 setup fee</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-xl font-semibold text-[var(--color-primary)] mb-2">Pro Plan</h3>
+            <div class="text-3xl font-bold text-[var(--color-accent)] mb-2">$50/mo</div>
+            <p class="text-gray-700 mb-4">AI insights & custom branding.</p>
+            <ul class="space-y-2 mb-4 flex-1">
+              <li>✔ All Starter features</li>
+              <li>✔ AI summaries</li>
+              <li>✔ Weekly & monthly reports</li>
+              <li>✔ Custom themes</li>
+            </ul>
+            <p class="text-center text-gray-600">$150 setup fee</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-xl font-semibold text-[var(--color-primary)] mb-2">Growth</h3>
+            <div class="text-3xl font-bold text-[var(--color-accent)] mb-2">$75/mo</div>
+            <p class="text-gray-700 mb-4">Boost reviews & automate support.</p>
+            <ul class="space-y-2 mb-4 flex-1">
+              <li>✔ All Pro features</li>
+              <li>✔ Redirect logic</li>
+              <li>✔ Review booster</li>
+              <li>✔ Help forms</li>
+            </ul>
+            <p class="text-center text-gray-600">$200 setup fee</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-xl font-semibold text-[var(--color-primary)] mb-2">Elite</h3>
+            <div class="text-3xl font-bold text-[var(--color-accent)] mb-2">$150/mo</div>
+            <p class="text-gray-700 mb-4">White-label & multi-channel alerts.</p>
+            <ul class="space-y-2 mb-4 flex-1">
+              <li>✔ All Growth features</li>
+              <li>✔ White-label</li>
+              <li>✔ SMS & email workflows</li>
+              <li>✔ Team dashboards</li>
+            </ul>
+            <p class="text-center text-gray-600">$350 setup fee</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="refund-policy" class="py-20 bg-white" data-aos="fade-up" data-aos-delay="500">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-6 text-[var(--color-primary)]">Refund Policy</h2>
+          <p class="text-gray-700 mb-4">Setup fees are non-refundable. Monthly subscriptions can be canceled anytime and you will retain access until the end of the billing period. Monthly payments are non-refundable once charged. However, if EchoQR's core features fail to perform as promised, you may be eligible for a refund upon review.</p>
+        </div>
+      </section>
+
+      <section id="features-invite" class="py-20 bg-[var(--color-bg-light)]" data-aos="fade-up" data-aos-delay="600">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-6 text-[var(--color-primary)]">Curious About Our Features?</h2>
+          <p class="text-gray-700">Explore what every EchoQR plan unlocks — <a href="features.html" class="underline text-[var(--color-primary)]">check out our Features page</a>.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-[var(--color-primary)] text-white py-12">
+      <div class="container mx-auto px-6 grid gap-8 md:grid-cols-3 text-left">
+        <div><h3 class="font-semibold mb-2">EchoQR</h3><p>Luxury feedback solutions for service‑obsessed brands.</p></div>
+        <div><h3 class="font-semibold mb-2">Quick Links</h3><ul class="space-y-1"><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">FAQ</a></li><li><a href="https://tally.so/r/3NO8z0" target="_blank">Get Started</a></li></ul></div>
+        <div><h3 class="font-semibold mb-2">Contact Us</h3><p><a href="mailto:echoqrteam@gmail.com">echoqrteam@gmail.com</a></p><p>Follow: <strong>@echoqr</strong></p></div>
+      </div>
+      <div class="text-center mt-8 text-gray-200">© 2025 EchoQR. Crafted with passion & powered by innovation.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({ duration: 800, once: true });
+      document.getElementById('mobile-menu-btn').onclick = () => document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

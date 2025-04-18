@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f5f3d">
+  <title>About Us | EchoQR Ultra™ Feedback</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  <style>
+    :root {
+      --color-primary: #0f5f3d;
+      --color-secondary: #a8ffcb;
+      --color-accent: #d4af37;
+      --color-bg-light: #f3fcf4;
+    }
+  </style>
+</head>
+<body class="flex flex-col md:flex-row bg-[var(--color-bg-light)] text-gray-900 font-sans">
+
+  <!-- Sidebar -->
+  <aside class="hidden md:flex md:flex-col w-64 bg-white shadow-lg fixed top-0 bottom-0">
+    <nav class="flex-1 mt-6 px-6 space-y-4">
+      <a href="faq.html" class="block text-gray-700 hover:text-[var(--color-primary)]">FAQ</a>
+      <a href="why us.html" class="block text-gray-700 hover:text-[var(--color-primary)]">Why Us</a>
+      <a href="about.html" class="block text-gray-700 hover:text-[var(--color-primary)]">About Us</a>
+      <a href="terms of service.html" class="block text-gray-700 hover:text-[var(--color-primary)]">Terms of Service</a>
+      <a href="privacy policy.html" class="block text-gray-700 hover:text-[var(--color-primary)]">Privacy Policy</a>
+     <a href="https://tally.so/r/3NO8z0" class="block bg-[var(--color-secondary)] text-[var(--color-primary)] px-4 py-2 rounded-full font-semibold hover:bg-[var(--color-accent)]">Get Started</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="flex-1 md:ml-64 flex flex-col">
+
+    <!-- Navbar -->
+    <header class="bg-[var(--color-primary)] sticky top-0 z-50 shadow-md">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <a href="index.html" class="text-white text-2xl font-bold">EchoQR</a>
+        <nav class="hidden md:flex space-x-8 text-white text-lg">
+          <a href="index.html" class="hover:text-[var(--color-secondary)]">Home</a>
+          <a href="features.html" class="hover:text-[var(--color-secondary)]">Features</a>
+          <a href="pricing.html" class="hover:text-[var(--color-secondary)]">Pricing</a>
+          <a href="contact.html" class="hover:text-[var(--color-secondary)]">Contact</a>
+          <a href="https://tally.so/r/3NO8z0" class="bg-[var(--color-secondary)] text-[var(--color-primary)] px-5 py-2 rounded-full font-semibold hover:bg-[var(--color-accent)] transition">Sign Up Here</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-white text-3xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden bg-[var(--color-primary)] md:hidden">
+        <nav class="flex flex-col px-6 py-4 space-y-4 text-white text-lg">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html" class="bg-[var(--color-secondary)] text-[var(--color-primary)] px-4 py-2 rounded-full text-center font-semibold">Sign Up Here</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Us Section -->
+    <main class="pt-8 pb-16 flex justify-center">
+      <section id="about" class="bg-white rounded-xl shadow-lg p-8 mb-12 max-w-2xl text-center" data-aos="fade-up">
+        <h1 class="text-4xl font-bold text-[var(--color-primary)] mb-4 mx-auto">About EchoQR</h1>
+        <p class="italic mb-6 mx-auto max-w-xl">Founded in Utah, powered by youthful innovation.</p>
+
+        <p class="mb-6 text-lg">EchoQR was born from a vision to transform guest feedback into a strategic advantage. Traditional feedback channels are slow and often ignored; our QR-based system ensures your team receives instant, actionable insights.</p>
+
+        <h2 class="text-2xl font-semibold text-[var(--color-primary)] mt-8 mb-4">Our Mission</h2>
+        <p class="mb-6 text-lg mx-auto max-w-xl">Empower service-first brands with enterprise-grade feedback tools that are intuitive, reliable, and scalable.</p>
+
+        <h2 class="text-2xl font-semibold text-[var(--color-primary)] mt-8 mb-4">Core Values</h2>
+        <ul class="list-disc list-inside inline-block text-left space-y-2 mb-6">
+          <li><strong>Proactive Service</strong> — Resolve issues before they reach public reviews.</li>
+          <li><strong>Seamless Experience</strong> — No app downloads, no friction.</li>
+          <li><strong>Inclusive Quality</strong> — Premium features accessible to all venues.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-[var(--color-primary)] mt-8 mb-4">Who We Serve</h2>
+        <p class="mb-6">From upscale restaurants to boutique salons, EchoQR caters to any brand committed to exceptional guest experiences.</p>
+
+        <h2 class="text-2xl font-semibold text-[var(--color-primary)] mt-8 mb-4">Join the Movement</h2>
+        <p class="mb-4">Elevate your service, amplify your reputation.</p>
+        <a href="mailto:echoqrteam@gmail.com" class="inline-block bg-[var(--color-primary)] text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition">Contact Us Today</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--color-primary)] text-white py-12">
+      <div class="max-w-7xl mx-auto px-6 grid gap-8 md:grid-cols-3 text-left">
+        <div>
+          <h3 class="font-semibold mb-2">EchoQR</h3>
+          <p>Luxury feedback solutions for service‑obsessed brands.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Quick Links</h3>
+          <ul class="space-y-1">
+            <li><a href="features.html">Features</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="https://tally.so/r/3NO8z0"Get Started</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Contact</h3>
+          <p><a href="mailto:echoqrteam@gmail.com">echoqrteam@gmail.com</a></p>
+          <p>Follow: <strong>@echoqrtech</strong> on Instagram & TikTok</p>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-gray-200">&copy; 2025 EchoQR. All rights reserved.</div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({ duration: 800, once: true });
+      document.getElementById('mobile-menu-btn').onclick = () =>
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
