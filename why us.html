@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f5f3d">
+  <title>EchoQR — Elevate Every Interaction</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  <style>
+    :root {
+      --color-primary:   #0f5f3d;
+      --color-secondary: #a8ffcb;
+      --color-accent:    #d4af37;
+      --color-bg-light:  #f3fcf4;
+    }
+  </style>
+</head>
+<body class="flex flex-col md:flex-row bg-[var(--color-bg-light)] text-gray-900 font-sans">
+
+  <!-- Sidebar (Desktop) -->
+  <aside class="hidden md:flex md:flex-col w-64 bg-white shadow-lg fixed top-0 bottom-0 py-16">
+    <nav class="flex flex-col items-start space-y-8 px-8 text-lg">
+      <a href="FAQ.html" class="text-gray-700 hover:text-[var(--color-primary)] font-semibold transition">FAQ</a>
+      <a href="why us.html" class="text-gray-700 hover:text-[var(--color-primary)] font-semibold transition">Why Us</a>
+      <a href="about.html" class="text-gray-700 hover:text-[var(--color-primary)] font-semibold transition">About Us</a>
+      <a href="Terms of service.html" class="text-gray-700 hover:text-[var(--color-primary)] font-semibold transition">Terms of Service</a>
+      <a href="privacy policy.html" class="text-gray-700 hover:text-[var(--color-primary)] font-semibold transition">Privacy Policy</a>
+      <div class="pt-10 w-full">
+        <a href="https://tally.so/r/3NO8z0" class="block bg-[var(--color-secondary)] text-[var(--color-primary)] px-6 py-3 rounded-full font-bold text-center hover:bg-[var(--color-accent)] transition">Get Started</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="flex-1 md:ml-64">
+
+    <!-- Header -->
+    <header class="bg-[var(--color-primary)] sticky top-0 z-50 shadow-md">
+      <div class="container mx-auto flex items-center justify-between px-6 py-4">
+        <a href="index.html" class="flex items-center">
+          <span class="text-white text-2xl font-bold">EchoQR</span>
+        </a>
+        <nav class="hidden md:flex space-x-8 text-white text-lg">
+          <a href="index.html" class="hover:text-[var(--color-secondary)]">Home</a>
+          <a href="features.html" class="hover:text-[var(--color-secondary)]">Features</a>
+          <a href="Pricing.html" class="hover:text-[var(--color-secondary)]">Pricing</a>
+          <a href="contact.html" class="hover:text-[var(--color-secondary)]">Contact</a>
+          <a href="https://tally.so/r/3NO8z0" class="bg-[var(--color-secondary)] text-[var(--color-primary)] px-5 py-2 rounded-full font-semibold hover:bg-[var(--color-accent)] transition">Sign Up Here</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-white text-3xl">☰</button>
+      </div>
+      <div id="mobile-menu" class="hidden bg-[var(--color-primary)] md:hidden">
+        <nav class="flex flex-col px-6 py-4 space-y-4 text-white text-lg">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="Pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://tally.so/r/3NO8z0" class="bg-[var(--color-secondary)] text-[var(--color-primary)] px-4 py-2 rounded-full text-center font-semibold">Sign Up Here</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Comparison Section -->
+    <main class="pt-12 pb-16">
+      <section id="compare" class="container mx-auto px-6 text-center mb-12" data-aos="fade-up">
+        <h1 class="text-4xl font-bold text-[var(--color-primary)] mb-4">EchoQR vs Google Reviews vs Yelp</h1>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">Discover how EchoQR sets a new standard beyond traditional review platforms.</p>
+      </section>
+
+      <section class="container mx-auto px-6 bg-white rounded-xl shadow-2xl p-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="overflow-x-auto">
+          <table class="w-full table-auto border rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-[var(--color-accent)] text-[var(--color-primary)]">
+                <th class="p-4 text-left">Feature</th>
+                <th class="p-4">EchoQR</th>
+                <th class="p-4">Google</th>
+                <th class="p-4">Yelp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t">
+                <td class="p-4">Real-Time Alerts</td><td class="p-4">✔️</td><td class="p-4">❌</td><td class="p-4">❌</td>
+              </tr>
+              <tr class="border-t">
+                <td class="p-4">Custom Branding</td><td class="p-4">✔️</td><td class="p-4">❌</td><td class="p-4">❌</td>
+              </tr>
+              <tr class="border-t">
+                <td class="p-4">Private Feedback</td><td class="p-4">✔️</td><td class="p-4">❌</td><td class="p-4">❌</td>
+              </tr>
+              <tr class="border-t">
+                <td class="p-4">Loyalty Tracking</td><td class="p-4">✔️</td><td class="p-4">❌</td><td class="p-4">❌</td>
+              </tr>
+              <tr class="border-t">
+                <td class="p-4">AI Summaries</td><td class="p-4">✔️</td><td class="p-4">❌</td><td class="p-4">❌</td>
+              </tr>
+              <tr class="border-t">
+                <td class="p-4">No App Needed</td><td class="p-4">✔️</td><td class="p-4">❌</td><td class="p-4">❌</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-left space-y-6 mt-10" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="text-2xl font-semibold text-[var(--color-primary)]">Why Choose EchoQR?</h2>
+          <ul class="list-disc list-inside text-gray-800 space-y-4">
+            <li><strong>Immediate Issue Resolution</strong> — Empower your team to address guest feedback in real-time.</li>
+            <li><strong>Fully Customizable Experience</strong> — Tailor everything to your brand.</li>
+            <li><strong>Data Sovereignty & Security</strong> — Full control of your feedback data with encryption.</li>
+            <li><strong>Actionable Growth Intelligence</strong> — AI analytics for real business growth.</li>
+          </ul>
+        </div>
+
+        <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="300">
+          <a href="https://tally.so/r/3NO8z0" target="_blank" class="inline-block bg-[var(--color-primary)] text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transition-transform hover:scale-105">
+            Start Your 7-Day Free Trial
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--color-primary)] text-white py-12">
+      <div class="container mx-auto px-6 grid gap-8 md:grid-cols-3">
+        <div>
+          <h3 class="font-semibold mb-2">EchoQR</h3>
+          <p>Luxury feedback solutions for service‑obsessed brands.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Quick Links</h3>
+          <ul class="space-y-1">
+            <li><a href="features.html">Features</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li> <a href="https://tally.so/r/3NO8z0">Get Started</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Contact</h3>
+          <p><a href="mailto:echoqrteam@gmail.com">echoqrteam@gmail.com</a></p>
+          <p>Follow: <strong>@echoqrtech</strong> on Instagram & TikTok</p>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-gray-200">© 2025 EchoQR. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({ duration: 800, once: true });
+      document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+        document.getElementById('mobile-menu')?.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
